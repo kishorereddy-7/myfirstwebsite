@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+} 
+header{
+    height: 100vh;
+    width: 100%;
+    background: url("/home/venkata/Downloads/IMG-3901.jpg") no-repeat ;
+    background-position: center;
+    background-size: cover;
+}
+::selection{
+    background: green;
+}
+
+header nav{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    margin: 20px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu {
+    display: flex;
+}
+
+nav .menu li {
+    list-style: none;
+    margin: 0 10px;
+    background-color: thistle;
+    padding: 6px 18px;
+    border-radius: 10px;
+}
+
+nav .menu a{
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    color: red;
+}
+
+nav .search-box{
+    position: relative;
+    height: 40px;
+    width: 250px;
+}
+
+.remove-pic {
+    color: white;
+}
+  
+.search-box input[type="text"]{
+    position: absolute;
+    font-size: 17px;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    color: brown;
+    border: 2px solid blue;
+    padding: 0 10px 0 40px;
+    background: lightgoldenrodyellow;
+}
+
+.search-box a{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.text-content {
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    z-index: 12;
+}
+
+header .text-content .text{
+    font-size: 27px;
+    color: lightskyblue;
+
+}
+
+header .text-content .name {
+    color: lightskyblue;
+    font-size: 75px;
+    font-weight: 600;
+    margin: -20px 0 0 -3px;
+
+}
+
+header .text-content .job {
+    color: lightskyblue;
+    font-size: 40px;
+    margin: 5px 0;
+    margin-top: -4px;
+    display: flex;
+}
+
+.text-content .typing-text{
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid greenyellow;
+    animation: typing 7s steps(17) infinite;
+}
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 16ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.text-content .job .one {
+    color: greenyellow;
+
+}
+
+.text-content .job .two {
+    color: greenyellow;
+
+}
+
+.content .boy img{
+    position: absolute;
+    height: 95%;
+    bottom: 0;
+    right: 80px;
+}
+
+header .media-icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.media-icons a{
+    margin: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.3;
+    color: white;
+    transition: all 0.3s ease;
+}
+.media-icons a:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#latest{
+    padding-left: 20px;
+    background-color: azure;
+}
+
+.latest-items {
+    display: flex;
+}
+
+div .latest-items li{
+    margin: 0 30px;
+    list-style: none;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 0 10px;
+    font-weight: 600;
+    color: darkorange;
+}
+
+.latest-info h4{
+    opacity: 0.7;
+}
